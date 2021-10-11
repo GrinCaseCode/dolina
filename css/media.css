@@ -152,6 +152,12 @@
     padding: 18px;
     padding-top: 0;
 }
+.map-contact {
+    margin-left: 110px;
+}
+.list-map {
+    margin-right: -110px;
+}
 }
 @media only screen and (max-width : 1300px) {
     .tabs-video {
@@ -168,7 +174,12 @@
 .item-catalog__price {
     font-size: 17px;
 }
-
+.tabs-contacts a {
+    height: 50px;
+    font-size: 16px;
+    margin: 0 6px;
+    width: 250px;
+}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -179,7 +190,7 @@
     font-size: 28px;
     line-height: 33px;
     margin-bottom: 25px;
-    margin-top: 35px;
+    padding-top: 35px;
 }
 .tags-catalog a {
     height: 45px;
@@ -199,6 +210,22 @@
     .item-catalog__title {
     font-size: 16px;
     line-height: 27px;
+}
+.contact-unit__title {
+    font-size: 16px;
+    }
+    .row_contacts > div:not(:first-child) {
+    padding-left: 25px;
+}
+.list-map li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tabs-contacts a {
+    height: 50px;
+    font-size: 14px;
+    margin: 0 6px;
+    width: 215px;
 }
 }
 
@@ -310,7 +337,19 @@
 .item-catalog__price {
     font-size: 20px;
 }
-
+.list-map {
+    padding-top: 0;
+    height: 230px;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+.map-contact {
+    height: 350px;
+    margin-left: 0;
+}
+.tabs-contacts {
+    margin-top: 30px;
+}
 }
 @media only screen and (max-width : 935px) {
     .tabs-video {
@@ -439,6 +478,16 @@ body {
 .row_footer > div:nth-child(3) {
     order: 2;
 }
+.tabs-contacts a {
+    width: 100%;
+}
+.tabs-contacts li {
+    flex: 1;
+    padding: 0 2px;
+}
+.row_contacts > div:not(:first-child) {
+    padding-left: 15px;
+}
 }
 @media only screen and (max-width : 600px) {
 
@@ -469,7 +518,7 @@ body {
     font-size: 21px;
     line-height: 30px;
     margin-bottom: 20px;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 .title-section span {
     padding-right: 17px;
@@ -481,6 +530,17 @@ body {
     .sortings-wrap {
     margin-top: 10px;
     margin-bottom: 15px;
+}
+.tabs-contacts {
+    margin: 0 -5px;
+    margin-top: 25px;
+}
+.tabs-contacts a {
+    font-size: 12px;
+    padding: 0 3px;
+}
+.contacts {
+    padding-bottom: 45px;
 }
 }
 
