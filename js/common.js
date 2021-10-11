@@ -71,16 +71,23 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(this).parent().addClass('active');
 		$(".tab-pane-video").removeClass("active");
 		$(".tab-pane-video").fadeOut(0);
-		$(".tab-pane-video video").get(0).pause();
-		$(".tab-pane-video video").get(0).currentTime = 0;
+	$("video").get(0).pause();
+		$("video").get(0).currentTime = 0;
 		var selectTab = $(this).attr("href");
 		$(selectTab).fadeIn(0);
 		$(selectTab).addClass("active");
+		$(selectTab).find("video").get(0).currentTime = 0;
 		$(selectTab).find("video").trigger('play');
 
 	});
+
+	$("video").on('ended',function(){
+$(".tabs-video li.active").next().find("a").trigger('click');
+		});
 /*
 		$("video").on('ended',function(){
+				$(".tab-pane-video video").get(0).pause();
+		$(".tab-pane-video video").get(0).currentTime = 0;
 $(this).parent(".tab-pane-video:not(:last-child)").fadeOut(0);
 $(this).parent().next(".tab-pane-video").fadeIn(0);
 $(".tabs-video li.active").next().addClass("active");
