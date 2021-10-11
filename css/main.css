@@ -408,6 +408,9 @@ transition: all 0.3s;
 .item-category:hover .item-category__image img {
 	transform: scale(1.05);
 }
+.item-category:hover .item-category__image::after {
+	opacity: 0;
+}
 .item-category__image img {
 		width: 100%;
 	height: 100%;
@@ -431,6 +434,7 @@ transition: all 0.3s;
 	left: 0;
 	background-color: #3a677f;
 	opacity: 0.6;
+	transition: all 0.3s;
 }
 .item-category__content {
 	padding: 35px;

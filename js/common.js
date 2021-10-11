@@ -8,23 +8,7 @@ $(document).ready(function() {
 		scrollingSpeed: 1000,
 	});
 
-	$('.tab-pane-video').each(function() {
-		$(this).find("video").on('ended',function(){
-
-
-			if ($(this).not(':last-child')) {
-				$(this).parent(".tab-pane-video:not(:last-child)").fadeOut(0);
-				$(this).parent().next(".tab-pane-video").fadeIn(200);
-
-				$(".tabs-video li.active").next().addClass("active");
-				$(".tabs-video li.active").prev().removeClass("active");
-
-				$(this).parent().next(".tab-pane-video").find("video").get(0).play();
-			} else {
-
-			}
-		});
-	});
+	
 
 	{
 		if ($(window).width() < 768) { 
@@ -86,10 +70,17 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(this).parent().parent().find("li").removeClass('active');
 		$(this).parent().addClass('active');
 		$(".tab-pane-video").fadeOut(0);
+		$(".tab-pane-video video").trigger('pause');
+		$(".tab-pane-video video").currentTime = 0;
 		var selectTab = $(this).attr("href");
-		$(selectTab).fadeIn(100);
+		$(selectTab).fadeIn(0);
 		$(selectTab).find("video").trigger('play');
 	});
+
+		$("video").on('ended',function(){
+$(this).parent(".tab-pane-video:not(:last-child)").fadeOut(0);
+$(this).parent().next(".tab-pane-video").fadeIn(0);
+		});
 
 	$('.tabs-contacts li a').click(function(event) {
 		event.preventDefault();
@@ -97,9 +88,29 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		$(this).parent().addClass('active');
 		$(".tab-pane-contacts").hide();
 		var selectTab2 = $(this).attr("href");
-		$(selectTab2).fadeIn(100);
+		$(selectTab2).fadeIn(200);
 	});
 
+
+/*
+	$('.tab-pane-video').each(function() {
+		$(this).find("video").on('ended',function(){
+
+
+			if ($(this).not(':last-child')) {
+				$(this).parent(".tab-pane-video:not(:last-child)").fadeOut(0);
+				$(this).parent().next(".tab-pane-video").fadeIn(200);
+
+				$(".tabs-video li.active").next().addClass("active");
+				$(".tabs-video li.active").prev().removeClass("active");
+
+				//$(this).next(".tab-pane-video:not(:last-child)").find("video").get(0).play();
+			} else {
+
+			}
+		});
+	});
+*/
 	$(".input-phone").mask("+7 (999) 999-99-99");
 
 
