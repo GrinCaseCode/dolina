@@ -69,19 +69,24 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
 		$(this).parent().addClass('active');
+		$(".tab-pane-video").removeClass("active");
 		$(".tab-pane-video").fadeOut(0);
-		$(".tab-pane-video video").trigger('pause');
-		$(".tab-pane-video video").currentTime = 0;
+		$(".tab-pane-video video").get(0).pause();
+		$(".tab-pane-video video").get(0).currentTime = 0;
 		var selectTab = $(this).attr("href");
 		$(selectTab).fadeIn(0);
+		$(selectTab).addClass("active");
 		$(selectTab).find("video").trigger('play');
-	});
 
+	});
+/*
 		$("video").on('ended',function(){
 $(this).parent(".tab-pane-video:not(:last-child)").fadeOut(0);
 $(this).parent().next(".tab-pane-video").fadeIn(0);
+$(".tabs-video li.active").next().addClass("active");
+				$(".tabs-video li.active").prev().removeClass("active");
 		});
-
+*/
 	$('.tabs-contacts li a').click(function(event) {
 		event.preventDefault();
 		$(this).parent().parent().find("li").removeClass('active');
