@@ -37,12 +37,12 @@
         margin-bottom: 40px;
     }
     .btn-personal {
-     margin-bottom: 25px;
- } 
- .sidebar__top {
-     padding: 25px 0;
- }
- .item-category {
+       margin-bottom: 25px;
+   } 
+   .sidebar__top {
+       padding: 25px 0;
+   }
+   .item-category {
     height: 325px;
 }
 .col-lg-4 .item-category {
@@ -59,13 +59,13 @@
         margin-bottom: 23px;
     }
     .menu {
-     padding-bottom: 0;
- }
- .menu a {
+       padding-bottom: 0;
+   }
+   .menu a {
     height: 45px;
 }
 .menu .has_child > a::after {
- top: 20px;
+   top: 20px;
 }
 .item-category {
     height: 290px;
@@ -92,7 +92,19 @@
     .row_footer > div:last-child {
         padding-left: 0;
     }
-
+.item-news__image {
+    height: 222px;
+}
+.item-news__title {
+    font-size: 19px;
+    line-height: 27px;
+    }
+    .instagram-block .title-page {
+        font-size: 28px;
+    }
+    .instagram-block__plant img {
+    max-height: 213px;
+}
 }
 @media only screen and (max-width : 1735px) {
     .tabs-video {
@@ -123,6 +135,32 @@
         font-size: 20px;
         line-height: 30px;
     }
+    .item-news__image {
+    height: 200px;
+    margin-bottom: 15px;
+}
+.item-news__title {
+    font-size: 17px;
+    line-height: 23px;
+}
+.item-news__date {
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+.row_news > div {
+    margin-bottom: 35px;
+}
+.instagram-block__plant img {
+    max-height: 187px;
+}
+.instagram-block__plant {
+    margin-right: 18px;
+}
+.instagram-block .title-page {
+    font-size: 24px;
+    padding-right: 90px;
+    line-height: 35px;
+}
 }
 @media only screen and (max-width : 1589px) {
     .tabs-video {
@@ -179,6 +217,51 @@
     .descr-big p {
         margin-bottom: 23px;
     }
+    .vacancies-block {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .vacancies-block__content {
+        padding: 35px;
+        width: 540px;
+    }
+    .vacancies-block__image {
+        min-height: 383px;
+    }
+    .card-block {
+        font-size: 17px;
+        line-height: 28px;
+    }
+    .row_card {
+        margin-top: 70px;
+    }
+    .availability {
+        font-size: 18px;
+    }
+    .item-news__image {
+        height: 180px;
+    }
+    .item-news__title {
+    font-size: 16px;
+}
+.instagram-block__plant img {
+    max-height: 164px;
+}
+.instagram-block .title-page {
+    font-size: 21px;
+    padding-right: 83px;
+    line-height: 31px;
+}
+.instagram-block .title-page img {
+    margin-right: 17px;
+    max-width: 39px;
+}
+.item-dairy:nth-child(2) .item-dairy__text::after {
+    margin-top: -26px;
+}
+.item-dairy__text::after {
+    right: 0;
+}
 }
 @media only screen and (max-width : 1450px) {
     .sidebar {
@@ -218,6 +301,28 @@
     }
     .list-map {
         margin-right: -110px;
+    }
+    .title-page {
+        font-size: 27px;
+        line-height: 32px;
+    }
+    .row_card {
+        margin-top: 50px;
+    }
+    .breadcrumbs-wrap {
+        padding-top: 45px;
+    }
+    .card {
+        padding-bottom: 50px;
+    }
+    .instagram-block .title-page {
+        font-size: 19px;
+    }
+    .item-dairy:nth-child(3) .item-dairy__text::after {
+        margin-top: 0;
+    }
+    .item-dairy:nth-child(4) .item-dairy__text::after {
+        margin-top: 80px;
     }
 }
 @media only screen and (max-width : 1300px) {
@@ -273,6 +378,50 @@
         font-size: 16px;
         height: 51px;
     }
+    .vacancies-block {
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .vacancies-block__content {
+        padding: 25px;
+        width: 520px;
+    }
+    .vacancies-block__image {
+        min-height: 325px;
+    }
+    .item-vacancy__head {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .card-block {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .row_news {
+        margin: 0 -5px;
+    }
+    .row_news > div {
+        padding: 0 5px;
+        margin-bottom: 20px;
+    }
+    .item-news__image {
+        height: 160px;
+    }
+    .instagram-block__plant img {
+        max-height: 131px;
+    }
+    .tabs-page a {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 41px;
+    height: 50px;
+}
+.item-dairy__text::after {
+    transform: scale(0.8);
+}
+.item-dairy:nth-child(5) .item-dairy__text::after {
+    margin-top: -40px;
+}
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -336,6 +485,47 @@
         padding-top: 53px;
         padding-bottom: 40px;
     }
+    .card-block {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 20px;
+    }
+    .slider-card__image {
+        height: 470px;
+    }
+    .row_card {
+        margin-top: 0;
+    }
+    .card-block {
+       margin-top: 15px;
+    }
+    .title-page {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .instagram-block__plant {
+        display: none;
+    }
+    .instagram-block .title-page {
+        padding-right: 0;
+    }
+    .row_insta {
+        margin: 0 -7px;
+    }
+    .row_insta > div {
+        padding: 0 7px;
+    }
+    .item-dairy:nth-child(4) .item-dairy__text::after {
+        margin-top: 0px;
+        margin-right: -20px;
+    }
+    .item-dairy:nth-child(2) .item-dairy__text::after {
+    margin-top: -94px;
+    right: 83%;
+}
+.item-dairy:nth-child(5) .item-dairy__text::after {
+    margin-top: -85px;
+}
 }
 
 /* Medium Devices, Desktops */
@@ -403,9 +593,9 @@
         height: calc(100vh - 85px);
     }
     .fp-tableCell {
-       vertical-align: top;
-   }
-   .footer {
+     vertical-align: top;
+ }
+ .footer {
     padding-top: 15px;
 }
 .fp-section.fp-table, .fp-slide.fp-table {
@@ -459,7 +649,15 @@
 .tabs-contacts {
     margin-top: 30px;
 }
-
+.breadcrumbs-wrap {
+    padding-top: 30px;
+}
+.instagram-block .title-page {
+    margin-bottom: 20px;
+}
+.col_pl {
+    padding-left: 15px;
+}
 }
 @media only screen and (max-width : 935px) {
     .tabs-video {
@@ -630,9 +828,47 @@ body {
 .presentation {
     background-position: left;
 }
+.vacancies-block {
+    display: block;
+}
+.vacancies-block__image {
+    height: 230px;
+    min-height: initial;
+}
+.vacancies-block__content {
+    width: 100%;
+}
+.item-vacancy__head {
+    font-size: 15px;
+    line-height: 23px;
+    padding: 20px;
+}
+.item-vacancy__content {
+    padding: 20px;
+}
+.slider-card__image {
+    height: 370px;
+}
+.slider-card {
+    margin-bottom: 20px;
+}
+.availability {
+    font-size: 18px;
+    }
+    .item-dairy__text::after {
+        display: none !important;
+    }
 }
 @media only screen and (max-width : 600px) {
 
+}
+@media only screen and (max-width : 571px) {
+.item-news__image {
+    height: 248px;
+}
+.row_news > div {
+    margin-bottom: 30px;
+}
 }
 
 /* Extra Small Devices, Phones */
@@ -697,6 +933,59 @@ body {
     .title-big {
         font-size: 25px;
     }
+    .vacancies-block__image {
+        height: 171px;
+    }
+    .vacancies-block__content {
+        padding: 15px;
+    }
+    .item-vacancy__content {
+        padding: 20px 0;
+    }
+    .item-vacancy__head {
+        font-size: 14px;
+        line-height: 21px;
+        padding: 16px;
+    }
+    .vacancies {
+        padding-bottom: 35px;
+    }
+    .title-page {
+    font-size: 22px;
+    line-height: 30px;
+}
+.slider-card__image {
+    height: 345px;
+}
+.line-feature {
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.availability {
+    font-size: 16px;
+}
+.card__line .price-main {
+    margin-right: 41px;
+}
+.price-main {
+    font-size: 25px;
+    }
+    .price-main span {
+    font-size: 32px;
+}
+.item-news__image {
+    height: 223px;
+}
+.instagram-block .title-page {
+    font-size: 20px;
+}
+.row_insta > div:nth-child(3) {
+    display: none;
+}
+.tabs-page a {
+    font-size: 15px;
+    padding: 0 35px;
+}
 }
 
 /* Custom, iPhone Retina */

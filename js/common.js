@@ -36,6 +36,14 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$menu.removeClass("fixed").addClass("default");
 }
 
+$(".item-vacancy__head").click(function() {
+  $(this).parent().toggleClass("active");
+  $(this).siblings().slideToggle(200);
+  $(this).parent().siblings(".item-vacancy").removeClass("active");
+  $(this).parent().siblings(".item-vacancy").find(".item-vacancy__content").slideUp(200);
+});
+
+
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
@@ -59,11 +67,17 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 
 	//слайдер
 
-	$('.slider').slick({
+	$('.slider-card').slick({
+		arrows: true,
+		dots: false,
 		infinite: true,
 		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+		touchThreshold: 1000,
+		prevArrow: '<div class="slick-prev slick-arrow"><i class="far fa-chevron-left"></i><div/>',
+		nextArrow: '<div class="slick-next slick-arrow"><i class="far fa-chevron-right"></i><div/>',
 	});
+
 
 	$('.tabs-video li a').click(function(event) {
 		event.preventDefault();
@@ -84,6 +98,40 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$("video").on('ended',function(){
 $(".tabs-video li.active").next().find("a").trigger('click');
 		});
+
+
+	jQuery('.quantity').each(function() {
+		var spinner = jQuery(this),
+		input = spinner.find('input[type="number"]'),
+		btnUp = spinner.find('.quantity-up'),
+		btnDown = spinner.find('.quantity-down'),
+		min = input.attr('min'),
+		max = input.attr('max');
+
+		btnUp.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue >= max) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue + 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+		btnDown.click(function() {
+			var oldValue = parseFloat(input.val());
+			if (oldValue <= min) {
+				var newVal = oldValue;
+			} else {
+				var newVal = oldValue - 1;
+			}
+			spinner.find("input").val(newVal);
+			spinner.find("input").trigger("change");
+		});
+
+	});
+
 /*
 		$("video").on('ended',function(){
 				$(".tab-pane-video video").get(0).pause();
@@ -101,6 +149,15 @@ $(".tabs-video li.active").next().addClass("active");
 		$(".tab-pane-contacts").hide();
 		var selectTab2 = $(this).attr("href");
 		$(selectTab2).fadeIn(200);
+	});
+
+	$('.tabs-page li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tabs-pane-page").hide();
+		var selectTab3 = $(this).attr("href");
+		$(selectTab3).fadeIn(200);
 	});
 
 
