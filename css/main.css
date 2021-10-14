@@ -1557,7 +1557,7 @@ background-size: 100% 100%;
 .dairy_production .item-dairy__image img {
 	margin: 0 auto;
 }
-.dairy_production .item-dairy {
+.dairy_production .item-dairy { 
 	margin-bottom: 0;
 }
 .dairy_production .dairies-wrap {
