@@ -18,7 +18,7 @@
     .col-lg-4 .item-category {
         height: 167px;
     }
-    .item-category__content li {
+    .item-category__content li { 
         margin-bottom: 15px;
     }
     .footer__content {
@@ -92,19 +92,25 @@
     .row_footer > div:last-child {
         padding-left: 0;
     }
-.item-news__image {
-    height: 222px;
-}
-.item-news__title {
-    font-size: 19px;
-    line-height: 27px;
+    .item-news__image {
+        height: 222px;
+    }
+    .item-news__title {
+        font-size: 19px;
+        line-height: 27px;
     }
     .instagram-block .title-page {
         font-size: 28px;
     }
     .instagram-block__plant img {
-    max-height: 213px;
-}
+        max-height: 213px;
+    }
+    .text-advantage {
+        padding: 50px 55px;
+        font-size: 19px;
+        line-height: 29px;
+        max-width: 820px;
+    }
 }
 @media only screen and (max-width : 1735px) {
     .tabs-video {
@@ -136,31 +142,82 @@
         line-height: 30px;
     }
     .item-news__image {
-    height: 200px;
-    margin-bottom: 15px;
-}
-.item-news__title {
-    font-size: 17px;
-    line-height: 23px;
-}
-.item-news__date {
-    font-size: 13px;
-    margin-bottom: 7px;
-}
-.row_news > div {
-    margin-bottom: 35px;
-}
-.instagram-block__plant img {
-    max-height: 187px;
-}
-.instagram-block__plant {
-    margin-right: 18px;
-}
-.instagram-block .title-page {
-    font-size: 24px;
-    padding-right: 90px;
-    line-height: 35px;
-}
+        height: 200px;
+        margin-bottom: 15px;
+    }
+    .item-news__title {
+        font-size: 17px;
+        line-height: 23px;
+    }
+    .item-news__date {
+        font-size: 13px;
+        margin-bottom: 7px;
+    }
+    .row_news > div {
+        margin-bottom: 35px;
+    }
+    .instagram-block__plant img {
+        max-height: 187px;
+    }
+    .instagram-block__plant {
+        margin-right: 18px;
+    }
+    .instagram-block .title-page {
+        font-size: 24px;
+        padding-right: 90px;
+        line-height: 35px;
+    }
+    .item-advantage {
+        font-size: 16px;
+        line-height: 26px;
+        padding-left: 93px;
+    }
+    .advantages-block__image {
+        width: 30%;
+    }
+    .advantages-block__col:first-child {
+        max-width: 29%;
+    }
+    .advantages-block__col:first-child .item-advantage:nth-child(2)::after {
+        left: 86%;
+    }
+    .item-advantage::after {
+        left: 68%;
+        transform: scale(0.8);
+    }
+    .advantages-block__image img {
+        max-width: 340px;
+    }
+    .advantages-block__col:first-child .item-advantage:nth-child(2) {
+        top: 30px;
+    }
+    .dairy_production .item-dairy:first-child .item-dairy__text::after {
+        left: 98%;
+    }
+    .text-advantage__image img {
+        max-width: 240px;
+    }
+    .text-advantage {
+        padding: 40px 55px;
+        font-size: 18px;
+        line-height: 29px;
+        max-width: 780px;
+        margin-top: 70px;
+    }
+    .article h1 {
+        font-size: 22px;
+        line-height: 37px;
+        margin-bottom: 13px;
+    }
+    .article h2 {
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 25px;
+    }
+    .article {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 @media only screen and (max-width : 1589px) {
     .tabs-video {
@@ -242,26 +299,90 @@
         height: 180px;
     }
     .item-news__title {
-    font-size: 16px;
+        font-size: 16px;
+    }
+    .instagram-block__plant img {
+        max-height: 164px;
+    }
+    .instagram-block .title-page {
+        font-size: 21px;
+        padding-right: 83px;
+        line-height: 31px;
+    }
+    .instagram-block .title-page img {
+        margin-right: 17px;
+        max-width: 39px;
+    }
+    .item-dairy:nth-child(2) .item-dairy__text::after {
+        margin-top: -26px;
+    }
+    .item-dairy__text::after {
+        right: 0;
+    }
+    .advantages-block__col:last-child .item-advantage:nth-child(2)::after {
+        right: 94%;
+    }
+    .advantages-block__col:last-child .item-advantage:nth-child(1)::after{
+        right: 99%;
+    }
+    .item-advantage {
+        font-size: 14px;
+        line-height: 22px;
+        padding-left: 89px;
+    }
+    .advantages-block__image img {
+        max-width: 291px;
+    }
+    .advantages-block__col:last-child .item-advantage:nth-child(2)::after {
+        top: 76%;
+    }
+    .advantages-block__col:first-child .item-advantage:nth-child(2)::after {
+        left: 79%;
+        top: -25px;
+    }
+    .item-advantage::after {
+        left: 63%;
+    }
+    .advantages-block {
+        margin-top: 50px;
+    }
+    .text-advantage {
+        padding: 40px 55px;
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 720px;
+        margin-top: 60px;
+    }
+    .text-advantage__image img {
+        max-width: 200px;
+    }
+    .advantages {
+        padding-bottom: 70px;
+    }
+    .dairy_production .item-dairy:last-child .item-dairy__image img {
+        position: relative;
+        left: -30px;
+    }
+    .article h1 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 13px;
 }
-.instagram-block__plant img {
-    max-height: 164px;
+.article blockquote {
+    font-size: 15px;
+    line-height: 21px;
+    padding: 24px 25px;
+    }
+    .article h2 {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 15px;
 }
-.instagram-block .title-page {
-    font-size: 21px;
-    padding-right: 83px;
-    line-height: 31px;
-}
-.instagram-block .title-page img {
-    margin-right: 17px;
-    max-width: 39px;
-}
-.item-dairy:nth-child(2) .item-dairy__text::after {
-    margin-top: -26px;
-}
-.item-dairy__text::after {
-    right: 0;
-}
+.article time {
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 13px;
+    }
 }
 @media only screen and (max-width : 1450px) {
     .sidebar {
@@ -323,6 +444,22 @@
     }
     .item-dairy:nth-child(4) .item-dairy__text::after {
         margin-top: 80px;
+    }
+    .advantages-block__col:first-child .item-advantage:nth-child(2) .descr-big {
+        padding-right: 55px;
+    }
+    .advantages-block__col:first-child .item-advantage:nth-child(2)::after {
+        left: 67%;
+    }
+    .item-advantage::after {
+        left: 59%;
+    }
+    .text-advantage {
+        padding: 28px 35px;
+        font-size: 15px;
+        line-height: 23px;
+        max-width: 640px;
+        margin-top: 55px;
     }
 }
 @media only screen and (max-width : 1300px) {
@@ -411,17 +548,39 @@
         max-height: 131px;
     }
     .tabs-page a {
-    font-size: 16px;
-    line-height: 30px;
-    padding: 0 41px;
-    height: 50px;
-}
-.item-dairy__text::after {
-    transform: scale(0.8);
-}
-.item-dairy:nth-child(5) .item-dairy__text::after {
-    margin-top: -40px;
-}
+        font-size: 16px;
+        line-height: 30px;
+        padding: 0 41px;
+        height: 50px;
+    }
+    .item-dairy__text::after {
+        transform: scale(0.8);
+    }
+    .item-dairy:nth-child(5) .item-dairy__text::after {
+        margin-top: -40px;
+    }
+    .item-advantage::after {
+        transform: scale(0.6);
+    }
+    .advantages-block__image img {
+        max-width: 249px;
+    }
+    .advantages-block__col {
+        max-width: 36%;
+    }
+    .advantages-block__col:first-child {
+        max-width: 29%;
+    }
+    .advantages-block__col:last-child .item-advantage:nth-child(2)::after {
+        right: 83%;
+        top: 70%;
+    }
+    .advantages-block__col:last-child .item-advantage:nth-child(1)::after {
+        right: 92%;
+    }
+    .text-advantage__image img {
+        max-width: 150px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -498,33 +657,66 @@
     }
     .card-block {
        margin-top: 15px;
-    }
-    .title-page {
-        font-size: 25px;
-        line-height: 32px;
-    }
-    .instagram-block__plant {
-        display: none;
-    }
-    .instagram-block .title-page {
-        padding-right: 0;
-    }
-    .row_insta {
-        margin: 0 -7px;
-    }
-    .row_insta > div {
-        padding: 0 7px;
-    }
-    .item-dairy:nth-child(4) .item-dairy__text::after {
-        margin-top: 0px;
-        margin-right: -20px;
-    }
-    .item-dairy:nth-child(2) .item-dairy__text::after {
+   }
+   .title-page {
+    font-size: 25px;
+    line-height: 32px;
+}
+.instagram-block__plant {
+    display: none;
+}
+.instagram-block .title-page {
+    padding-right: 0;
+}
+.row_insta {
+    margin: 0 -7px;
+}
+.row_insta > div {
+    padding: 0 7px;
+}
+.item-dairy:nth-child(4) .item-dairy__text::after {
+    margin-top: 0px;
+    margin-right: -20px;
+}
+.item-dairy:nth-child(2) .item-dairy__text::after {
     margin-top: -94px;
     right: 83%;
 }
 .item-dairy:nth-child(5) .item-dairy__text::after {
     margin-top: -85px;
+}
+.advantages-block {
+ flex-wrap: wrap;
+ align-items: flex-start;
+}
+.advantages-block__col {
+    margin: 0;
+    width: 50%;
+    max-width: 100% !important;
+}
+.advantages-block__image {
+    width: 100%;
+    order: -1;
+}
+.item-advantage::after {
+    display: none;
+}
+.advantages-block__col:first-child .item-advantage:nth-child(2) {
+    top: 0;
+}
+.item-advantage {
+    margin-top: 25px;
+    padding-right: 25px;
+    min-height: 73px;
+}
+.dairy_production .item-dairy:nth-child(2) .item-dairy__text::after {
+    margin-top: -11px;
+}
+.text-advantage__image {
+    display: none;
+}
+.dairy_production .dairies-wrap {
+    margin-top: -55px;
 }
 }
 
@@ -658,6 +850,13 @@
 .col_pl {
     padding-left: 15px;
 }
+.article__right {
+    padding-left: 15px;
+}
+.article__left {
+    padding-right: 15px;
+}
+
 }
 @media only screen and (max-width : 935px) {
     .tabs-video {
@@ -854,21 +1053,54 @@ body {
 }
 .availability {
     font-size: 18px;
-    }
-    .item-dairy__text::after {
-        display: none !important;
-    }
+}
+.item-dairy__text::after {
+    display: none !important;
+}
+.advantages-block__col {
+    width: 100%;
+}
+.advantages {
+    padding-bottom: 50px;
+}
+.dairy_production .dairies-wrap {
+    margin-top: 0;
+}
+.dairy_production .item-dairy:first-child .item-dairy__text {
+    margin-top: 0;
+}
+.dairy_production .item-dairy {
+    margin-bottom: 25px;
+}
+.dairy_production .item-dairy img {
+    margin-top: 20px;
+}
+.dairy_production .item-dairy:last-child .item-dairy__image img {
+    left: 0;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.text-advantage {
+    margin-top: 25px;
+}
+.title-form {
+    font-size: 29px;
+    margin-bottom: 23px;
+}
+.article {
+    padding-bottom: 40px;
+}
 }
 @media only screen and (max-width : 600px) {
 
 }
 @media only screen and (max-width : 571px) {
-.item-news__image {
-    height: 248px;
-}
-.row_news > div {
-    margin-bottom: 30px;
-}
+    .item-news__image {
+        height: 248px;
+    }
+    .row_news > div {
+        margin-bottom: 30px;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -951,41 +1183,57 @@ body {
         padding-bottom: 35px;
     }
     .title-page {
-    font-size: 22px;
-    line-height: 30px;
-}
-.slider-card__image {
-    height: 345px;
-}
-.line-feature {
-    font-size: 12px;
-    margin-bottom: 3px;
-}
-.availability {
-    font-size: 16px;
-}
-.card__line .price-main {
-    margin-right: 41px;
-}
-.price-main {
-    font-size: 25px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .slider-card__image {
+        height: 345px;
+    }
+    .line-feature {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+    .availability {
+        font-size: 16px;
+    }
+    .card__line .price-main {
+        margin-right: 41px;
+    }
+    .price-main {
+        font-size: 25px;
     }
     .price-main span {
-    font-size: 32px;
-}
-.item-news__image {
-    height: 223px;
-}
-.instagram-block .title-page {
-    font-size: 20px;
-}
-.row_insta > div:nth-child(3) {
-    display: none;
-}
-.tabs-page a {
-    font-size: 15px;
-    padding: 0 35px;
-}
+        font-size: 32px;
+    }
+    .item-news__image {
+        height: 223px;
+    }
+    .instagram-block .title-page {
+        font-size: 20px;
+    }
+    .row_insta > div:nth-child(3) {
+        display: none;
+    }
+    .tabs-page a {
+        font-size: 15px;
+        padding: 0 35px;
+    }
+    .text-advantage {
+        padding: 20px 20px;
+    }
+    .advantages {
+        padding-bottom: 40px;
+    }
+    .block-form {
+        padding: 25px 20px;
+    }
+    .title-form {
+        font-size: 25px;
+        margin-bottom: 22px;
+    }
+    .dairy_production {
+        padding-bottom: 30px;
+    }
 }
 
 /* Custom, iPhone Retina */
