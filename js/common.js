@@ -1,5 +1,15 @@
 $(document).ready(function() {
 
+	 /*personal*/
+	$('.tabs-personal li a').click(function(event) {
+		event.preventDefault();
+		$(this).parent().parent().find("li").removeClass('active');
+		$(this).parent().addClass('active');
+		$(".tab-pane-personal").hide();
+		var selectTab4 = $(this).attr("href");
+		$(selectTab4).fadeIn(200);
+	});
+
 	$('#fullpage').fullpage({
 		normalScrollElements: '.sidebar',
 		responsiveHeight: 600,

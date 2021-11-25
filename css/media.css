@@ -37,12 +37,12 @@
         margin-bottom: 40px;
     }
     .btn-personal {
-       margin-bottom: 25px;
-   } 
-   .sidebar__top {
-       padding: 25px 0;
-   }
-   .item-category {
+     margin-bottom: 25px;
+ } 
+ .sidebar__top {
+     padding: 25px 0;
+ }
+ .item-category {
     height: 325px;
 }
 .col-lg-4 .item-category {
@@ -59,13 +59,13 @@
         margin-bottom: 23px;
     }
     .menu {
-       padding-bottom: 0;
-   }
-   .menu a {
+     padding-bottom: 0;
+ }
+ .menu a {
     height: 45px;
 }
 .menu .has_child > a::after {
-   top: 20px;
+ top: 20px;
 }
 .item-category {
     height: 290px;
@@ -364,25 +364,46 @@
         left: -30px;
     }
     .article h1 {
-    font-size: 22px;
-    line-height: 30px;
-    margin-bottom: 13px;
-}
-.article blockquote {
-    font-size: 15px;
-    line-height: 21px;
-    padding: 24px 25px;
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 13px;
+    }
+    .article blockquote {
+        font-size: 15px;
+        line-height: 21px;
+        padding: 24px 25px;
     }
     .article h2 {
-    font-size: 15px;
-    line-height: 22px;
-    margin-bottom: 15px;
-}
-.article time {
-    font-size: 13px;
-    line-height: 24px;
-    margin-bottom: 13px;
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 15px;
     }
+    .article time {
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 13px;
+    }
+
+    /*personal*/
+    .tab-container-personal {
+        padding: 40px;
+    }
+    .table-history,
+    .table-treaty { 
+        font-size: 13px;
+    }
+    .table-treaty .btn-main {
+        padding: 0 25px;
+        font-size: 14px;
+    }
+    .table-history th:nth-child(2), .table-history td:nth-child(2) {
+        width: 65px;
+    }
+    .text-personal {
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 23px;
+}
 }
 @media only screen and (max-width : 1450px) {
     .sidebar {
@@ -461,6 +482,7 @@
         max-width: 640px;
         margin-top: 55px;
     }
+
 }
 @media only screen and (max-width : 1300px) {
     .tabs-video {
@@ -581,6 +603,26 @@
     .text-advantage__image img {
         max-width: 150px;
     }
+
+    /*personal*/
+    .tabs-personal a {
+        font-size: 16px;
+        height: 65px;
+        padding: 0 15px;
+    }
+    .tab-container-personal {
+        padding: 20px;
+    }
+    .table-treaty .btn-main {
+        padding: 0 15px;
+        line-height: 16px;
+    }
+    .table-history th:nth-child(2), .table-history td:nth-child(2) {
+        width: 45px;
+    }
+    .table-history tr > *:first-child {
+        width: 106px;
+    }
 }
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -656,9 +698,9 @@
         margin-top: 0;
     }
     .card-block {
-       margin-top: 15px;
-   }
-   .title-page {
+     margin-top: 15px;
+ }
+ .title-page {
     font-size: 25px;
     line-height: 32px;
 }
@@ -686,8 +728,8 @@
     margin-top: -85px;
 }
 .advantages-block {
- flex-wrap: wrap;
- align-items: flex-start;
+   flex-wrap: wrap;
+   align-items: flex-start;
 }
 .advantages-block__col {
     margin: 0;
@@ -717,6 +759,19 @@
 }
 .dairy_production .dairies-wrap {
     margin-top: -55px;
+}
+
+/*personal*/
+.text-personal {
+    font-size: 15px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+.table-treaty .btn-main {
+    font-size: 14px;
+}
+.table-adress {
+    font-size: 12px;
 }
 }
 
@@ -785,9 +840,9 @@
         height: calc(100vh - 85px);
     }
     .fp-tableCell {
-     vertical-align: top;
- }
- .footer {
+       vertical-align: top;
+   }
+   .footer {
     padding-top: 15px;
 }
 .fp-section.fp-table, .fp-slide.fp-table {
@@ -857,6 +912,27 @@
     padding-right: 15px;
 }
 
+/*personal*/ 
+.tabs-personal {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+}
+.tabs-personal li {
+    flex-grow: 1;
+}
+.tabs-personal a {
+    justify-content: center;
+    text-align: center;
+    margin: 0 2px;
+    margin-bottom: 15px;
+}
+.buttons-form {
+    padding-top: 15px;
+}
+.table-adress  {
+    font-size: 14px;
+}
 }
 @media only screen and (max-width : 935px) {
     .tabs-video {
@@ -1090,6 +1166,55 @@ body {
 .article {
     padding-bottom: 40px;
 }
+
+/*personal*/ 
+.tabs-personal a {
+    font-size: 14px;
+    height: 60px;
+    padding: 0 6px;
+}
+.table-history,
+.table-adress {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    margin-right: -15px;
+    overflow: auto;
+}
+.table-history table {
+    width: 700px;
+}
+.table-adress table {
+    width: 660px;
+}
+.table-history::-webkit-scrollbar,
+.table-adress::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+.table-history::-webkit-scrollbar:vertical,
+.table-adress::-webkit-scrollbar:vertical {
+    width: 3px;
+}
+.table-history::-webkit-scrollbar:horizontal,
+.table-adress::-webkit-scrollbar:horizontal {
+    height: 3px;
+}
+.table-history::-webkit-scrollbar-thumb,
+.table-adress::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+.table-history::-webkit-scrollbar-track,
+.table-adress::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ccc;
+}
+.table-history tr > *:first-child {
+    width: 155px;
+}
+.table-history {
+    margin-bottom: 0;
+}
 }
 @media only screen and (max-width : 600px) {
 
@@ -1233,6 +1358,51 @@ body {
     }
     .dairy_production {
         padding-bottom: 30px;
+    }
+
+    /*personal*/
+    .tabs-personal {
+        margin: 0 -15px;
+        max-width: initial;
+    }
+    .tabs-personal a {
+        font-size: 13px;
+    }
+    .tab-container-personal {
+        padding: 0;
+        border: none;
+    }
+    .table-treaty table {
+        width: 600px;
+    }
+    .table-treaty {
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        margin-right: -15px;
+        overflow: auto;
+    }
+    .table-treaty::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    .table-treaty::-webkit-scrollbar:vertical {
+        width: 3px;
+    }
+    .table-treaty::-webkit-scrollbar:horizontal {
+        height: 3px;
+    }
+    .table-treaty::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, .5);
+        border-radius: 10px;
+    }
+    .table-treaty::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: #ccc;
+    }
+    #tab_personal3 .btn-main {
+        font-size: 16px;
+        height: 50px;
+        padding: 0 33px;
     }
 }
 
