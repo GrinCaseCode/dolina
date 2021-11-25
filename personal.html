@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fontawesome-free-5.12.0-web/css/all.min.css" />
+	<link rel="stylesheet" href="libs/fullPage.js-master/jquery.fullPage.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.5.9/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/main.css?ver=1.10" />
+	<link rel="stylesheet" href="css/media.css?ver=1.10" />
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="sidebar">
+			<div class="sidebar__top">
+				<a href="tel:+79789416809" class="phone-mob"><i class="fas fa-phone-alt"></i></a>
+				<a href="#" class="logo">
+					<img src="img/logo2.png" alt="alt">
+				</a>
+				<div class="logo-descr"> Натуральные молочные продукты в Крыму</div>
+				<span class="btn_nav">
+					<span class='sandwich'>
+						<span class='sw-topper'></span>
+						<span class='sw-bottom'></span> 
+						<span class='sw-footer'></span>
+					</span> 
+				</span>
+			</div>
+			<div class="sidebar-content">
+				<ul class="menu">
+					<li class="has_child">
+						<a href="#">О компании</a>
+						<ul>
+							<li><a href="#">О Нас</a></li>
+							<li><a href="#">Партнерам</a></li>
+							<li><a href="#">Где купить</a></li>
+							<li><a href="#">Вакансии</a></li>
+						</ul>
+					</li>
+					<li class="has_child">
+						<a href="#">Производство</a>
+						<ul>
+							<li><a href="#">Молочное производство</a></li>
+							<li><a href="#">Сыроварня</a></li>
+							<li><a href="#">Напитки</a></li>
+						</ul>
+					</li>
+					<li class="has_child">
+						<a href="#">Каталог</a>
+						<ul>
+							<li><a href="#">Молоко</a></li>
+							<li><a href="#">Кефир</a></li>
+							<li><a href="#">Сметана</a></li>
+							<li><a href="#">Творог</a></li>
+							<li><a href="#">Масло</a></li>
+							<li><a href="#">Ряженка</a></li>
+							<li><a href="#">Бифилайф</a></li>
+							<li><a href="#"> Глазированные сырки</a></li>
+							<li><a href="#">Десерты</a></li>
+							<li><a href="#">Сыры твердые</a></li>
+							<li><a href="#">Сыры плавленые</a></li>
+							<li><a href="#">Холодный чай</a></li>
+							<li><a href="#">Вода</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<a href="#" class="btn-personal"><i class="fal fa-user-circle"></i>Личный кабинет</a>
+				<a href="#" class="btn-white">Написать нам</a>
+				<ul class="list-social">
+					<li><a href="#"><i class="fab fa-vk"></i></a></li>
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-odnoklassniki"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="fullpage-wrapper">
+			
+			<section class="personal">
+				<div class="container">
+					<div class="title-section"><span>Личный кабинет</span></div>
+					<div class="row">
+						<div class="col-lg-3">
+							<ul class="tabs-personal">
+								<li class="active"><a href="#tab_personal1">Ваши данные</a></li>
+								<li><a href="#tab_personal2">Договоры</a></li>
+								<li><a href="#tab_personal3">Адреса доставки</a></li>
+								<li><a href="#tab_personal4">История заказов</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-9">
+							<div class="tab-container-personal">
+								<div class="tab-pane-personal" id="tab_personal1">
+									<div class="text-personal">
+										<p>Дата последнего обновления: <strong>17.06.2021 в 11:06 </strong></p>
+										<p>Последняя авторизация: <strong>25.11.2021 09:57</strong></p>
+									</div>
+									<form>
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="item-form">
+													<input type="text" placeholder="Название компании" required="required">
+												</div>
+												<div class="item-form">
+													<input type="text" placeholder="+7 (ХХХ) ХХХ - ХХ - ХХ" required="required" class="input-phone">
+												</div>
+												<div class="item-form">
+													<input type="text" placeholder="ИНН" required="required">
+												</div>
+												<div class="item-form">
+													<input type="text" placeholder="КПП" required="required">
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="item-form">
+													<input type="email" placeholder="Email" required="required">
+												</div>
+												<div class="item-form">
+													<input type="text" placeholder="Адрес" required="required">
+												</div>
+												<div class="item-form">
+													<input type="password" placeholder="Старый пароль" required="required">
+												</div>
+												<div class="item-form">
+													<input type="password" placeholder="Новый пароль" required="required">
+												</div>
+											</div>
+										</div>
+										<div class="buttons-form">
+											<button class="btn-main btn-main_page">Сбросить</button>
+											<button class="btn-main">Сохранить</button>
+										</div>
+									</form>
+								</div>
+								<div class="tab-pane-personal" id="tab_personal2">
+									<div class="table-treaty">
+										<table>
+											<tbody>
+												<tr>
+													<td><a href="#" class="link-treaty link-treaty_bold"><i class="fas fa-arrow-alt-down"></i><span>Договор № ИП-01-2411-12 от 24.11.2021 г.</span></a></td>
+													<td>до 21.11.2022 г.</td>
+													<td></td>
+													<td>мин.сумма заказа: <strong>10 000 руб.</strong></td>
+												</tr>
+												<tr>
+													<td><a href="#" class="link-treaty"><i class="fas fa-arrow-alt-down"></i><span>Счет № 113 от 24.11.2021 г.</span></a></td>
+													<td>сумма : <strong>11 200 руб.</strong></td>
+													<td><div class="c_green">оплачен</div></td>
+													<td><a href="#" class="btn-main btn-main_page">Перейти к заказу</a></td>
+												</tr>
+												<tr>
+													<td><a href="#" class="link-treaty"><i class="fas fa-arrow-alt-down"></i><span>Счет № 113 от 24.11.2021 г.</span></a></td>
+													<td>сумма : <strong>11 200 руб.</strong></td>
+													<td><div>не оплачен</div></td>
+													<td><a href="#" class="btn-main btn-main_page">Перейти к заказу</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<div class="table-treaty">
+										<table>
+											<tbody>
+												<tr>
+													<td><a href="#" class="link-treaty link-treaty_bold"><i class="fas fa-arrow-alt-down"></i><span>Договор № ИП-01-2411-12 от 24.11.2021 г.</span></a></td>
+													<td>до 21.11.2022 г.</td>
+													<td></td>
+													<td>мин.сумма заказа: <strong>10 000 руб.</strong></td>
+												</tr>
+												<tr>
+													<td><a href="#" class="link-treaty"><i class="fas fa-arrow-alt-down"></i><span>Счет № 113 от 24.11.2021 г.</span></a></td>
+													<td>сумма : <strong>11 200 руб.</strong></td>
+													<td><div class="c_green">оплачен</div></td>
+													<td><a href="#" class="btn-main btn-main_page">Перейти к заказу</a></td>
+												</tr>
+												<tr>
+													<td><a href="#" class="link-treaty"><i class="fas fa-arrow-alt-down"></i><span>Счет № 113 от 24.11.2021 г.</span></a></td>
+													<td>сумма : <strong>11 200 руб.</strong></td>
+													<td><div>не оплачен</div></td>
+													<td><a href="#" class="btn-main btn-main_page">Перейти к заказу</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="tab-pane-personal" id="tab_personal3">
+									<div class="table-adress">
+										<table>
+											<thead>
+												<tr>
+													<th></th>
+													<th>Город</th>
+													<th>Адрес</th>
+													<th>Телефон</th>
+													<th>Примечание</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>
+														<a href="#" class="clear-td"><i class="far fa-times"></i></a>
+													</td>
+													<td>г.Симферополь</td>
+													<td>ул.Пушкина, 13</td>
+													<td>+7 (978) 111-22-33</td>
+													<td></td>
+													<td><a href="#" class="link-main">Изменить</a></td>
+												</tr>
+												<tr>
+													<td>
+														<a href="#" class="clear-td"><i class="far fa-times"></i></a>
+													</td>
+													<td>г.Алушта</td>
+													<td>ул.Ленина, 11</td>
+													<td>+7 (978) 111-22-33</td>
+													<td>В субботу до 15:00</td>
+													<td><a href="#" class="link-main">Изменить</a></td>
+												</tr>
+												<tr>
+													<td>
+														<a href="#" class="clear-td"><i class="far fa-times"></i></a>
+													</td>
+													<td>г.Севастооль</td>
+													<td>ул.Камышовая, 2</td>
+													<td>+7 (978) 111-22-33</td>
+													<td></td>
+													<td><a href="#" class="link-main">Изменить</a></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<form>
+										<div class="row">
+											<div class="col-lg-4">
+												<div class="item-form">
+													<input type="text" placeholder="Город" required="required">
+												</div>
+												<div class="item-form">
+													<input type="text" placeholder="+7 (ХХХ) ХХХ - ХХ - ХХ" class="input-phone" required="required">
+												</div>
+											</div>
+											<div class="col-lg-8">
+												<div class="item-form">
+													<input type="text" placeholder="Улица, номер дома" required="required">
+												</div>
+												<div class="item-form">
+													<input type="text" placeholder="Примечание" required="required">
+												</div>
+											</div>
+										</div>
+										<button class="btn-main">Добавить</button>
+									</form>
+								</div>
+								<div class="tab-pane-personal" id="tab_personal4">
+									<div class="table-history">
+										<table>
+											<thead>
+												<tr>
+													<th>Номер заказа</th>
+													<th>Кол-во товаров</th>
+													<th>Сумма</th>
+													<th>Тип оплаты</th>
+													<th>Статус</th>
+													<th>Ост. по счету</th>
+													<th>Ост. по счету</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td><a href="#" class="link-main">000123</a> от 24.11.2021 г.</td>
+													<td>15</td>
+													<td><strong>12 000 руб.</strong></td>
+													<td>нал.</td>
+													<td><div class="c_green">оплачен</div></td>
+													<td><strong>12 000 руб.</strong></td>
+													<td><strong>12 000 руб.</strong></td>
+												</tr>
+												<tr>
+													<td><a href="#" class="link-main">000148</a> от 24.11.2021 г.</td>
+													<td>6</td>
+													<td><strong>10 199 руб.</strong></td>
+													<td>без нал.</td>
+													<td><div>не оплачен</div></td>
+													<td>0 руб.</td>
+													<td><strong>10 199 руб.</strong></td>
+												</tr>
+												<tr>
+													<td><a href="#" class="link-main">000258</a> от 24.11.2021 г.</td>
+													<td>155</td>
+													<td><strong>117 051 руб.</strong></td>
+													<td>на Р/С</td>
+													<td><div>не оплачен</div></td>
+													<td><strong>117 051 руб.</strong></td>
+													<td><strong>1117 051 руб.</strong></td>
+												</tr>
+												<tr>
+													<td><a href="#" class="link-main">000123</a> от 24.11.2021 г.</td>
+													<td>15</td>
+													<td><strong>12 000 руб.</strong></td>
+													<td>нал.</td>
+													<td><div class="c_green">оплачен</div></td>
+													<td><strong>12 000 руб.</strong></td>
+													<td><strong>12 000 руб.</strong></td>
+												</tr>
+												<tr>
+													<td><a href="#" class="link-main">000148</a> от 24.11.2021 г.</td>
+													<td>6</td>
+													<td><strong>10 199 руб.</strong></td>
+													<td>без нал.</td>
+													<td><div>не оплачен</div></td>
+													<td>0 руб.</td>
+													<td><strong>10 199 руб.</strong></td>
+												</tr>
+												<tr>
+													<td><a href="#" class="link-main">000258</a> от 24.11.2021 г.</td>
+													<td>155</td>
+													<td><strong>117 051 руб.</strong></td>
+													<td>на Р/С</td>
+													<td><div>не оплачен</div></td>
+													<td><strong>117 051 руб.</strong></td>
+													<td><strong>1117 051 руб.</strong></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<div class="wrap-sections">
+					
+					<footer class="footer">
+						<div class="container">
+							<div class="row row_footer">
+								<div class="col-lg-3 col-md-3">
+									<div class="footer__title footer__title_mob">О Компании <i class="fal fa-plus"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">О Нас</a></li>
+											<li><a href="#">Партнерам</a></li>
+											<li><a href="#">Где купить</a></li>
+											<li><a href="#">Вакансии</a></li>
+										</ul>
+									</div>
+									<div class="footer__title footer__title_mob">Производство <i class="fal fa-plus"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">Молочное производство</a></li>
+											<li><a href="#">Сыроварня</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col_pr">
+									<div class="footer__title footer__title_mob">Наша продукция <i class="fal fa-plus"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">Молоко</a></li>
+											<li><a href="#">Кефир</a></li>
+											<li><a href="#">Сметана</a></li>
+											<li><a href="#">Творог</a></li>
+											<li><a href="#">Масло</a></li>
+											<li><a href="#">Ряженка</a></li>
+											<li><a href="#">Бифилайф</a></li>
+											<li><a href="#"> Глазированные сырки</a></li>
+											<li><a href="#">Десерты</a></li>
+											<li><a href="#">Сыры твердые</a></li>
+											<li><a href="#"> Сыры плавленые</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-2 offset-lg-1 col-md-2">
+									<div class="footer__title footer__title_mob">Личный кабинет <i class="fal fa-plus"></i></div>
+									<div class="footer__content">
+										<ul class="footer__nav">
+											<li><a href="#">Вход</a></li>
+											<li><a href="#">Регистрация</a></li>
+											<li><a href="#">Мои заказы</a></li>
+										</ul>
+									</div>
+									<a href="#" class="footer__title">Блог</a>
+									<br>
+									<a href="#" class="footer__title">Контакты</a>
+								</div>
+								<div class="col-lg-2 col-md-2">
+									<div class="footer__title footer__title_mob">Наши контакты <i class="fal fa-plus"></i></div>
+									<div class="footer__content">
+										<div class="footer__title">Офис:</div>
+										<p>Офис: г. Симферополь,</p>
+										<p>ул. Винницкая, 138, 3 этаж</p>
+										<br>
+										<div class="footer__title">Телефон:</div>
+										<p><a href="tel:+79789416809">+7 (978) 941-68-09</a></p>
+										<br>
+										<div class="footer__title">Эл. почта:</div>
+										<p><a href="mailto:contact@yug-moloko.com">contact@yug-moloko.com</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer-bottom">
+							<div class="container">
+								<div class="row align-items-center">
+									<div class="col-lg-3 col-md-4">
+										<a href="#">Политика конфиденциальности</a>
+									</div>
+									<div class="col-lg-3 col-md-4">
+										<p>г. Симферополь © Copyright 2021 г.</p>
+									</div>
+									<div class="col-lg-3 col-md-4">
+										<div class="create">Сделано в <img src="img/copy.svg" alt="alt"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</section>
+
+		</div>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/slick-1.5.9/slick/slick.min.js"></script>
+<script src="libs/scroll2id/PageScroll2id.min.js"></script>
+<script src="libs/mask/jquery.maskedinput.js"></script>
+<script src="libs/fullPage.js-master/vendors/jquery.easings.min.js"></script>
+<script src="libs/fullPage.js-master/vendors/scrolloverflow.min.js"></script>
+<script src="libs/fullPage.js-master/jquery.fullPage.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.10"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
